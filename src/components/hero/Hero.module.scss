@@ -1,0 +1,102 @@
+.container{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    padding: 0rem 2rem;
+
+    .h_sides{
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        .text1{
+            text-transform: uppercase;
+            font-size: 1.5rem;
+            width: min-content;
+            display: block;
+            font-weight: 800;
+        }
+        .text2{
+            display: flex;
+            flex-direction: column;
+            width: min-content;
+            color: black;
+            
+        }
+        .text2>:first-child{
+            font-size: 2.5rem;
+            font-weight: 800;
+        }
+        .text2>:nth-child(2){
+            display: block;
+        }
+        .traffic,.customer{
+            display: flex;
+            flex-direction: column;
+            text-align: right;
+        }
+        .traffic>:first-child{
+            font-size: 2.5rem;
+            font-weight: 800;
+        }
+        .customer>:first-child{
+            font-size: 2.5rem;
+            font-weight: 800;
+        }
+        
+    }
+
+    .wrapper{
+        display: flex;
+        align-items: baseline;
+        justify-content: center;
+        position: relative;
+
+        .blueCircle{
+            height: 25rem;
+            width: 25rem;
+            border-radius: 50%;
+            position: absolute;
+            bottom: 0;
+            z-index: -99;
+            background: linear-gradient(135.74deg,#0bb5ff 14.09%,#6dd3fe 83.81%);
+        }
+        img{
+            height: 25rem;
+            width: 25rem;
+            position: absolute;
+            bottom: 0;
+
+        }
+        .cart2{
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            position: absolute;
+            bottom: 25%;
+            right: 1%;
+           
+            .signUp{
+                display: flex;
+                align-items: center;
+                background-color: #fff;
+                padding: 10px;
+                border-radius: 15px;
+                font-size: .8rem;
+                gap: 10px;
+                -webkit-box-shadow: 4px 13px 21px -19px rgba(0,0,0,0.75);
+-moz-box-shadow: 4px 13px 21px -19px rgba(0,0,0,0.75);
+box-shadow: 4px 13px 21px -19px rgba(0,0,0,0.75);
+            }
+            span{
+                display: block;
+                width: 6rem;
+            }
+            .arrowbox{
+                border: .6px solid skyblue;
+                border-radius: 50%;
+                padding: .1rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+}

@@ -1,0 +1,29 @@
+.slider_container{
+    position: relative;
+    margin-top: 20px;
+
+    .swiper-button-next{
+        right: 10rem;
+        color: black;
+    }
+    .swiper-button-prev{
+        left: 10rem;
+        color: black;
+    }
+}
+.slider_container .swiper{
+    width: 70%;
+    height: 12rem;
+    position: unset;
+
+    .box{
+        width: 320px;
+        height: 100%;
+        background-color: white;
+        color: red;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+

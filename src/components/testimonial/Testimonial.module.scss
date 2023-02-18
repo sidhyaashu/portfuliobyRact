@@ -1,0 +1,53 @@
+.testimonial{
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .UpContainer{
+        display: grid;
+        align-items: flex-end;
+        width: 100%;
+        grid-template-columns: 1fr 2fr 1fr;
+        padding: 15rem 2rem 1rem 2rem;
+
+        .wrapper{
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+
+        }
+
+        .imageBox{
+            align-items: baseline;
+            display: flex;
+            justify-content: center;
+            position: relative;
+            
+            div{
+                z-index: -99;
+                height: 15rem;
+                width: 15rem;
+                background-color: pink;
+                position: absolute;
+                bottom: 0;
+                border-radius: 50%;
+            }
+            img{
+                height: 15rem;
+                width: 15rem;
+                position: absolute;
+                bottom: 0;
+            }
+        }
+        .happyCustomer{
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            align-items: flex-end;
+        }
+    }
+
+
+   
+}

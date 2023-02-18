@@ -1,0 +1,61 @@
+.container{
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    // background-color: #fe956f;
+    .logo{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        flex: 1;
+        img{
+            height: 2.5rem;
+            width: 2.5rem;
+            border-radius: 50%;
+            object-fit: cover;
+            cursor: pointer;
+        }
+        span{
+            font-weight: 600;
+            cursor: pointer;
+            font-size: 20px;
+        }
+    }
+    .right{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+
+        .menu{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 2rem;
+            list-style: none;
+
+            li{
+                font-weight: 500;
+                transition: all 500ms ease-out;
+            }
+
+            li:hover{
+                color: #fe956f;
+                cursor: pointer;
+            }
+        }
+        input{
+            outline: none;
+            border: none;
+            width: 10rem;
+            border-radius: 5px;
+            padding: 0.5rem 0.5rem 0.5rem 1rem;
+        }
+        .cart{
+            cursor: pointer;
+            height: 1.5rem;
+            width: 1.5rem;
+        }
+    }
+}
